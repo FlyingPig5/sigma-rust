@@ -51,7 +51,7 @@ android {
 
     useLibrary 'android.test.runner'
 
-    ndkVersion "26.2.11394342"
+    ndkVersion "28.2.13676358"
     android {
         namespace 'com.ergoplatform'
     }
@@ -106,10 +106,7 @@ cargo {
     module = "."
     libname = "ergowalletlibjni"
     targets = [
-        "arm",
         "arm64",
-        "x86",
-        "x86_64",
     ]
     profile = "release"
     prebuiltToolchains = true
